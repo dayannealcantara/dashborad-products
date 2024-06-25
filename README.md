@@ -1,30 +1,30 @@
-# React + TypeScript + Vite
+# Visão Geral (React - Vite - TypeScript )
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este frontend é parte de  um sistema desenvolvido para um teste de seleção onde se deve criar um protótipo de dashboard para um sistema que recebe pedidos.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* React: Utilizado como biblioteca principal para a construção da interface de usuário.
+* TypeScript: Utilizado para adicionar tipagem estática ao JavaScript, garantindo um código mais robusto e menos propenso a erros.
 
-## Expanding the ESLint configuration
+## Requistos funcionais da aplicação
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+* Listagem: Permite informações detalhadas sobre cada pedido, incluindo: nome do produto, valor, email e status de processamento.
+* Card de total do pedido: Informções sobre a quantidade de produtos do pedido
+* Card de valor total do pedido: Informções sobre o valor total dos produtos do pedido
 
-- Configure the top-level `parserOptions` property like this:
+## Api
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Usou-se a biblioteca externa json-server para simular uma API, onde os dados estão armazenados em um arquivo db.bjson (fornecido pela empresa)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Local de Desenvolvimento
+
+```bash
+# Instalar dependências do package.json
+$ yarn 
+
+# Executar projeto
+$ yarn dev
+
+# Executar servidor
+$ yarn json-server
