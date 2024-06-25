@@ -27,4 +27,7 @@ $ yarn
 $ yarn dev
 
 # Executar servidor
-$ yarn json-server
+$ yarn server
+
+# Executar testes
+$ yarn test
