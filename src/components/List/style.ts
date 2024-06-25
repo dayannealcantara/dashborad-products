@@ -17,7 +17,7 @@ export const Thead = styled.thead`
 
 export const Th = styled.th`
   padding: 16px;
-  text-align: center;
+  text-align:left;
 
   @media (max-width: 768px) {
    padding: 8px; 

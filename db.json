@@ -1,4 +1,5 @@
-[
+{ 
+  "products":[
   {
     "id": 1,
     "data": "2024-06-20",
@@ -245,4 +246,4 @@
     },
     "status": "Problema na entrega"
   }
-]
+]}

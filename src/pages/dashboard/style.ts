@@ -8,7 +8,7 @@ export const AppContainer = styled.div`
   flex-direction: column;  
 `;
 
-export const Heading = styled.h1`
+export const Title = styled.h1`
   margin-bottom: 24px;
   color: var(--lilac-900);
 `;
