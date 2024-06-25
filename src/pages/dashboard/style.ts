@@ -1,11 +1,17 @@
+import styled from "styled-components";
 
-import styled from 'styled-components';
-
-
-export const AppContainer = styled.div` 
-  width:100vh;
+export const Container = styled.div`
   display: flex;
-  flex-direction: column;  
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin-top: 56px;
+`;
+
+export const AppContainer = styled.div`
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Title = styled.h1`

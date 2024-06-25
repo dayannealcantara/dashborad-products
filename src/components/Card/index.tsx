@@ -1,4 +1,3 @@
-
 import { CardContainer, CardTitle, CardValue } from "./style";
 
 interface CardProps {

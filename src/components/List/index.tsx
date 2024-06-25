@@ -2,7 +2,7 @@ import { Table, Td, Th, Thead } from "./style";
 
 export interface Produto {
   nome: string;
-  valor: number;  
+  valor: number;
 }
 
 export interface Cliente {
@@ -37,7 +37,7 @@ const OrderList: React.FC<OrderListProps> = ({ orders }) => (
     <tbody>
       {orders.map((order) => (
         <tr key={order.id}>
-          <Td>{order.produtos.map(produto => produto.nome).join(', ')}</Td>
+          <Td>{order.produtos.map((produto) => produto.nome).join(", ")}</Td>
           <Td>{`R$ ${order.valorTotal.toFixed(2)}`}</Td>
           <Td>{order.cliente.email}</Td>
           <Td>{order.status}</Td>
